@@ -1,5 +1,5 @@
 {
-    "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
+    "bg": "./images/cat-bg.jpg",
     "title": "Animal Quiz",
     "description": "Você acha que conhece a fauna do nosso planeta? Então prove respondendo esse quiz",
     "questions": [
@@ -32,7 +32,7 @@
     "theme": {
       "colors": {
         "primary": "#583C87",
-        "secondary": "#f57c00",
+        "secondary": "#270d52",
         "mainBg": "#171B35",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",

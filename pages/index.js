@@ -4,7 +4,7 @@ import Widget from '../src/components/Widget'
 import GitHubCorner from '../src/components/GitHubCorner'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
-import QuizLogo from '../src/components/Widget'
+import QuizLogo from '../src/components/QuizLogo'
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -30,23 +30,26 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+      <QuizLogo />
       <Widget>
         <Widget.Header>
-          <h1>The Animal Quiz</h1>
+          <h1>{db.title}</h1>
         </Widget.Header>
         <Widget.Content>
-          <p>Ex eu velit excepteur cillum.</p>
+          <p>{db.description}</p>
         </Widget.Content>
       </Widget>
       <Widget>
-        <Widget.Content>
+        <Widget.Header>
           <h1>Quizes da galera</h1>
+        </Widget.Header>
+        <Widget.Content>
           <p>Ex eu velit excepteur cillum.Esse incididunt ipsum incididunt fugiat dolore elit.</p>
         </Widget.Content>
       </Widget>
       <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/ofelipescherer"/>
+      <GitHubCorner projectUrl="https://github.com/ofelipescherer/alura-quiz"/>
     </QuizBackground>
   );
 }
