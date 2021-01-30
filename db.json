@@ -4,25 +4,51 @@
     "description": "Você acha que conhece a fauna do nosso planeta? Então prove respondendo esse quiz",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media.giphy.com/media/dKNou2IQj7vm2kB9fX/giphy.gif",
+        "title": "Quantas espécies de felinos existem atualmente no mundo?",
+        "description": "Alguns felinos são bem comuns, porém você sabe dizer quantas espécies existem?",
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "41",
+          "40",
+          "18 milhões",
+          "38"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/JhpDQpQhBOlTW/giphy.gif",
+        "title": "Quais desses é o maior crocodilo",
+        "description": "Tanto em tamanho quanto em peso",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Crocodilo-de-água-salgada",
+           "Crocodilo-persa",
+           "Crocodilo-americano",
+           "Crocodilo-do-orinoco"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/KCetsAmkqjvNYIZMaL/giphy.gif",
+        "title": "Qual a cor da pele de um urso polar",
+        "description": "Será que essa pergunta é pegadinha?",
+        "answer": 1,
+        "alternatives": [
+           "Rosa",
+           "Preta",
+           "Laranja",
+           "Branca"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l0HlFOlbKxx1BjzO0/giphy.gif",
+        "title": "Qual o único mamífero que põe ovo?",
+        "description": "Bem facil",
+        "answer": 3,
+        "alternatives": [
+           "Coelho",
+           "Rato-toupeira-pelado",
+           "Morcego",
+           "Ornitorrinco"
         ]
       }
     ],
