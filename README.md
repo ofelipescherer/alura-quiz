@@ -1,5 +1,7 @@
 # Alura Quiz :game_die:
 
+---
+
 Feito em Janeiro de 2021 na imersão React 2ªEdição Next.js
 
 [Deploy na Vercel](https://alura-quiz.ofelipescherer.vercel.app)
@@ -9,43 +11,47 @@ O código serve apenas de estrutura e pode ser populado com qualquer arquivo de 
 
 ## Exemplo:
 
-``  
-{  
-"bg": "",  
-"title": "",  
-"description": "",  
-"questions": [  
-{  
-"image": "",  
-"title": "",  
-"description": "",  
-"answer": 0,  
-"alternatives": [  
-"",   
-"",   
-"",  
-""  
-]  
-}  
-],  
-"external": [  
-""  
-],  
-"theme": {  
-"colors": {  
-"primary": "",  
-"secondary": "#",  
-"mainBg": "",  
-"contrastText": "",  
-"wrong": "",  
-"success": ""  
-},  
-"borderRadius": "4px"  
-}  
-}  
-``  
+---
+
+```json
+{
+    "bg": "",
+    "title": "",
+    "description": "",
+    "questions": [
+      {
+        "image": "",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    ],
+    "external": [
+    ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "",
+        "secondary": "#",
+        "mainBg": "",
+        "contrastText": "",
+        "wrong": "",
+        "success": ""
+      },
+      "borderRadius": "4px"
+    }
+  }
+```
 
 # Teste você mesmo :wink:
+
+---
 
 Para testar o projeto por você mesmo rode o comando:
 ``
@@ -57,6 +63,9 @@ yarn dev
 ``
 
 # Recursos utilizados :clipboard:   
+
+---
+
 :white_check_mark: HTML  
 :white_check_mark: CSS  
 :white_check_mark: JavaScript  
@@ -68,6 +77,9 @@ yarn dev
 :white_check_mark: React Lottie  
 
 # Animações e imagens usadas :revolving_hearts:  
+
+---
+
 [Imagem de background](https://wallup.net/wp-content/uploads/2015/07/Cat-head-on-the-desk.jpg)  
 [GIF Questão 1](https://media.giphy.com/media/dKNou2IQj7vm2kB9fX/giphy.gif)  
 [GIF Questão 2](https://media.giphy.com/media/JhpDQpQhBOlTW/giphy.gif)  
@@ -77,6 +89,8 @@ yarn dev
 [Loading animation](https://lottiefiles.com/46997-color-preloader)  
 
 # Meus agradecimentos aos instrutores incríveis dessa imersão
+
+---
 
 [Mario Souto](https://twitter.com/omariosouto)  
 [Juliana Amoasei](https://twitter.com/aquijuz)  
