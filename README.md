@@ -2,48 +2,48 @@
 
 Feito em Janeiro de 2021 na imersão React 2ªEdição Next.js
 
-[Deploy na vercel](https://alura-quiz.ofelipescherer.vercel.app/)
+[Deploy na Vercel](https://alura-quiz.ofelipescherer.vercel.app)
 
 Quiz usando **Next.js**, aproveitando principalmente a questão do Next não precisar dar reload na página.  
 O código serve apenas de estrutura e pode ser populado com qualquer arquivo de dados seguindo a formatação do arquivo db.json
 
 ## Exemplo:
 
-``
-{
-    "bg": "",
-    "title": "",
-    "description": "",
-    "questions": [
-      {
-        "image": "",
-        "title": "",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-          "",
-          "",
-          "",
-          ""
-        ]
-      }
-    ],
-    "external": [
-    ""
-    ],
-    "theme": {
-      "colors": {
-        "primary": "",
-        "secondary": "#",
-        "mainBg": "",
-        "contrastText": "",
-        "wrong": "",
-        "success": ""
-      },
-      "borderRadius": "4px"
-    }
-  }
-``
+``  
+{  
+    "bg": "",  
+    "title": "",  
+    "description": "",  
+    "questions": [  
+      {  
+        "image": "",  
+        "title": "",  
+        "description": "",  
+        "answer": 0,  
+        "alternatives": [  
+          "",   
+          "",   
+          "",  
+          ""  
+        ]  
+      }  
+    ],  
+    "external": [  
+    ""  
+    ],  
+    "theme": {  
+      "colors": {  
+        "primary": "",  
+        "secondary": "#",  
+        "mainBg": "",  
+        "contrastText": "",  
+        "wrong": "",  
+        "success": ""  
+      },  
+      "borderRadius": "4px"  
+    }  
+  }  
+``  
 
 # Teste você mesmo :wink:
 
@@ -79,5 +79,5 @@ yarn dev
 # Meus agradecimentos aos instrutores incríveis dessa imersão
 
 [Mario Souto](https://twitter.com/omariosouto)  
-[Juliana Amoasei](https://twitter.com/aquijuz)
+[Juliana Amoasei](https://twitter.com/aquijuz)  
 [Paulo Silveira](https://twitter.com/paulo_caelum)
