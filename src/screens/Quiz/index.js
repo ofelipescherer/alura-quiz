@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes, { string } from 'prop-types';
+import { motion } from 'framer-motion';
 
 import Widget from '../../components/Widget';
 import GitHubCorner from '../../components/GitHubCorner';
@@ -10,59 +11,8 @@ import Button from '../../components/Button';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativeForm from '../../components/AlternativeForm';
 import BackLinkArrow from '../../components/BackLinkArrow';
-
-function ResultWidget({ results }) {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        <p>
-          Você acertou
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-
-            return somatoriaAtual;
-          })} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
-        <ul>
-          {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              #
-              {index + 1}
-              {' '}
-              Resultado:
-              {result === true ? 'Acertou' : 'Errou'}
-            </li>
-          ))}
-        </ul>
-      </Widget.Content>
-    </Widget>
-  );
-}
-
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        [Desafio do Loading]
-      </Widget.Content>
-    </Widget>
-  );
-}
+import ResultWidget from '../../components/ResultWidget';
+import LoadingWidget from '../../components/LoadingWidget';
 
 function QuestionWidget({
   question, totalQuestions, questionIndex, onSubmit, addResult,
@@ -74,7 +24,15 @@ function QuestionWidget({
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      variants={{
+        show: { opacity: 1, y: '0' },
+        hidden: { opacity: 0, y: '100%' },
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <Widget.Header>
         <BackLinkArrow href="/" />
         <h3>{` Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
@@ -135,11 +93,12 @@ function QuestionWidget({
               {JSON.stringify(question, null, 4)}
               </pre> */}
 
+          {/* {isQuestionSubmited && isCorrect && }
+          {isQuestionSubmited && !isCorrect && } */}
+
           <Button type="submit" disabled={!hasAlternativeSelected}>
             Confirmar
           </Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
         </AlternativeForm>
 
       </Widget.Content>
@@ -147,12 +106,11 @@ function QuestionWidget({
   );
 }
 
-QuestionWidget.propTypes = {
-  question: PropTypes.arrayOf(string).isRequired,
+/* QuestionWidget.propTypes = {
   totalQuestions: PropTypes.number.isRequired,
   questionIndex: PropTypes.number.isRequired,
   onSubmit: PropTypes.func.isRequired,
-};
+}; */
 
 const screenStates = {
   QUIZ: 'QUIZ',
@@ -197,7 +155,15 @@ export default function QuizPage({ externalQuestions, externalBg }) {
 
   return (
     <QuizBackground backgroundImage={externalBg}>
-      <QuizContainer>
+      <QuizContainer
+        as={motion.section}
+        variants={{
+          show: { opacity: 1, y: '0' },
+          hidden: { opacity: 0, y: '100%' },
+        }}
+        initial="hidden"
+        animate="show"
+      >
         <QuizLogo />
         {screenState === screenStates.QUIZ && (
         <QuestionWidget
@@ -209,7 +175,12 @@ export default function QuizPage({ externalQuestions, externalBg }) {
         />
         )}
         {screenState === screenStates.LOADING && <LoadingWidget />}
-        {screenState === screenStates.RESULT && <ResultWidget results={results} />}
+        {screenState === screenStates.RESULT && (
+        <ResultWidget
+          results={results}
+          externalQuestions={externalQuestions}
+        />
+        )}
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/ofelipescherer/alura-quiz" />
     </QuizBackground>
