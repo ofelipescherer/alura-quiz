@@ -11,38 +11,38 @@ O código serve apenas de estrutura e pode ser populado com qualquer arquivo de 
 
 ``  
 {  
-    "bg": "",  
-    "title": "",  
-    "description": "",  
-    "questions": [  
-      {  
-        "image": "",  
-        "title": "",  
-        "description": "",  
-        "answer": 0,  
-        "alternatives": [  
-          "",   
-          "",   
-          "",  
-          ""  
-        ]  
-      }  
-    ],  
-    "external": [  
-    ""  
-    ],  
-    "theme": {  
-      "colors": {  
-        "primary": "",  
-        "secondary": "#",  
-        "mainBg": "",  
-        "contrastText": "",  
-        "wrong": "",  
-        "success": ""  
-      },  
-      "borderRadius": "4px"  
-    }  
-  }  
+"bg": "",  
+"title": "",  
+"description": "",  
+"questions": [  
+{  
+"image": "",  
+"title": "",  
+"description": "",  
+"answer": 0,  
+"alternatives": [  
+"",   
+"",   
+"",  
+""  
+]  
+}  
+],  
+"external": [  
+""  
+],  
+"theme": {  
+"colors": {  
+"primary": "",  
+"secondary": "#",  
+"mainBg": "",  
+"contrastText": "",  
+"wrong": "",  
+"success": ""  
+},  
+"borderRadius": "4px"  
+}  
+}  
 ``  
 
 # Teste você mesmo :wink:
