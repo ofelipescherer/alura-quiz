@@ -1,5 +1,5 @@
 {
-    "bg": "./images/cat-bg.jpg",
+    "bg": "https://wallup.net/wp-content/uploads/2015/07/Cat-head-on-the-desk.jpg",
     "title": "Animal Quiz",
     "description": "Você acha que conhece a fauna do nosso planeta? Então prove respondendo esse quiz",
     "questions": [
@@ -49,6 +49,18 @@
            "Rato-toupeira-pelado",
            "Morcego",
            "Ornitorrinco"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/qvuIkBneOp8kM/giphy.gif",
+        "title": "Quantos litros de água um dromedário/camelo pode beber de uma vez só?",
+        "description": "dromedário e camelo têm difereças, porém a resposta é a mesma",
+        "answer": 1,
+        "alternatives": [
+           "40 litros",
+           "100 litros",
+           "160 litros",
+           "200 litros"
         ]
       }
     ],
